@@ -28,19 +28,19 @@ function App() {
     setMode('dark');
     document.body.style.backgroundColor='#2d2727';
     showAlert("Dark Mode has been enabled","success");
-    document.title="TextUtils - Dark Mode"
+    document.title="TextAce - Dark Mode"
   }
   else{
     setMode('light');
     document.body.style.backgroundColor='white';
     showAlert("Light Mode has been enabled","success") ;
-        document.title="TextUtils - light Mode"
+        document.title="TextAce - light Mode"
   }
 }
   return(
   <>  
   <Router>
-<Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} />
+<Navbar title="TextAce" mode={mode} toggleMode={toggleMode} />
 <Alert alert={alert}/>
 <div className="container my-3">
 <Routes>

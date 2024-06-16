@@ -51,14 +51,14 @@ return (
     <div className="mb-3">
         <h1 >{props.heading}</h1>
         <textarea className="form-control" onChange={handleOnChange} style={{backgroundColor: props.mode==='dark'?'#1a1616':'white',color: props.mode==='dark'?'white':'black'}} value={text} id="myBox" rows="10"></textarea>
-        <div className="row d-flex flex-row justify-content-center ">
-        <button className="btn mx-2 col-md-3  btn-primary my-2 " onClick={handleUpClick}>change to upper case</button>
-        <button className="btn mx-2 col-md-3 btn-primary my-2" onClick={handleLowClick}>change to Lower case</button>
-        <button className="btn mx-2 col-md-3  btn-primary my-2" onClick={handleClear}>clear</button>
-        <button className="btn mx-2 col-md-3   btn-primary my-2" onClick={handleClear}>clear</button>
-        <button className="btn mx-2 col-md-2   btn-primary my-2" onClick={handleClear}>clear</button>
-        <button className="btn mx-2 col-md-2  btn-primary my-2" onClick={handleCopy}>copy</button>
-        <button className="btn mx-2 col-md-2 col-xs-12 btn-primary my-2" onClick={handleExtraspaces}>extra spaces</button>
+        <div className="row d-flex flex-row justify-content-start ">
+        <button className="btn mx-2 col-5 col-md-3  btn-primary my-2 " onClick={handleUpClick}>change to upper case</button>
+        <button className="btn mx-2 col-5 col-md-3 btn-primary my-2" onClick={handleLowClick}>change to Lower case</button>
+        <button className="btn mx-2 col-5 col-md-3  btn-primary my-2" onClick={handleClear}>clear</button>
+        <button className="btn mx-2 col-5 col-md-3   btn-primary my-2" onClick={handleClear}>clear</button>
+        <button className="btn mx-2 col-5 col-md-2   btn-primary my-2" onClick={handleClear}>clear</button>
+        <button className="btn mx-2  col-5 col-md-2  btn-primary my-2" onClick={handleCopy}>copy</button>
+        <button className="btn mx-2 col-5 col-md-2  btn-primary my-2" onClick={handleExtraspaces}>extra spaces</button>
         </div>
     </div>
 </div>
